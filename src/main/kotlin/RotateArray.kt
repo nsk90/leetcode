@@ -1,5 +1,3 @@
-import java.util.*
-
 object RotateArray {
     /**
      * Rotates array in place, with O(1) additional memory.
@@ -8,11 +6,11 @@ object RotateArray {
         println(nums.contentToString())
 
         if (nums.size < 2) return
-        for (iter in 0 until k % nums.size) {
-            println("iteration $iter")
+        repeat(k % nums.size) {
+            println("iteration $it")
 
             val last = nums.last()
-            println("moving last: $last")
+            println("moving last element: $last")
 
             for (index in nums.size downTo 2) {
                 nums[index - 1] = nums[index - 2]
@@ -27,7 +25,7 @@ object RotateArray {
 fun main(args: Array<String>) {
     val array = intArrayOf(1, 2, 3, 4, 5)
     //val array = intArrayOf()
+
     // expect 4, 5, 1, 2, 3
     RotateArray.rotate(array, 2)
-    println(array.contentToString())
 }
