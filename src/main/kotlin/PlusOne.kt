@@ -8,7 +8,7 @@ object PlusOne {
      * You may assume the integer does not contain any leading zero, except the number 0 itself.
      */
     fun plusOne(digits: IntArray): IntArray {
-        for (index in digits.size - 1 downTo 0 ) {
+        for (index in digits.size - 1 downTo 0) {
             if (digits[index] == 9) {
                 digits[index] = 0
                 if (index == 0)
