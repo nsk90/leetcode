@@ -1,3 +1,5 @@
+package array
+
 object RotateArray {
     /**
      * Rotates array in place, with O(1) additional memory.
