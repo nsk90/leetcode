@@ -20,7 +20,7 @@ object SingleNumber {
     }
 }
 
-fun main(args: Array<String>) {
+fun main() {
     //val array = intArrayOf(5, 1, 3, 2, 1, 2, 3, 4, 5)
     val array = intArrayOf(2, 2, 1)
     //val array = intArrayOf(4)
