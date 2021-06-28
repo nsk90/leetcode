@@ -24,9 +24,14 @@ fun main() {
 
     val head = reverseList(first)
 
+    printList(head)
+}
+
+fun printList(head: ListNode?) {
     var list: ListNode? = head
     do {
-        println(list?.`val`)
+        print("${list?.`val`}, ")
         list = list?.next
     } while (list != null)
+    println()
 }

@@ -46,9 +46,5 @@ fun main() {
 
     deleteNode(second)
 
-    var list: ListNode? = first
-    do {
-        println(list?.`val`)
-        list = list?.next
-    } while (list != null)
+    printList(first)
 }
