@@ -1,4 +1,4 @@
-package strings
+package strings.easy
 
 fun longestCommonPrefix(strings: Array<String>): String {
     val minLenString = strings.minBy { it.length }!!

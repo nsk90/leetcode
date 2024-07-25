@@ -1,4 +1,4 @@
-package strings
+package strings.easy
 
 fun isPalindrome(string: String): Boolean {
     val letters = string.filter { it.isLetter() || it.isDigit() }.toLowerCase().toCharArray()
